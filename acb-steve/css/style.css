@@ -1,0 +1,163 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+main {
+  background: radial-gradient(circle at center, rgb(255, 255, 255) 0, rgb(255, 96, 215), rgb(89, 165, 252), rgb(0, 0, 0) 100%)
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: bold;
+  font-size: 28px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ /* header {
+  display: flex;
+  height: auto;
+  width: 100%;
+} */
+
+.header-img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+nav {
+  border-top: solid 5px rgb(90, 90, 90, 0.5);
+  border-bottom: solid 5px rgba(90, 90, 90, 0.5);
+  background: black;
+  /* box-shadow: 0px 0px 10px; */
+  padding: 1rem 0;
+}
+
+.nav-socials {
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  list-style: none;
+  margin-right: 2rem;
+
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Was about to fix the about us text so that it is center, in a smaller block similar to the wix template and then maybe start adding font styles and the radial cover background. */
+
+
+.about-us-img {
+  border-radius: 10px;
+  padding: 20px 20px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+} 
+
+.about-us{
+  max-height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-us-text{
+  margin: 50px 50px;
+  /* background-color: green; */
+  padding: 20px 20px;
+  width: 50%;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/* Starting to layout the who is another cover band section of the web page. Trying to get the text to the right and the image on the left */
+
+/* need to make the pictures elastic/fluid so they stay within their respective containers. Need to do this also for the about us picture. Somehow the header image is the only one adjusting within the confines of its container. */
+
+.who-is-acb {
+  max-height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.who-is-acb-text {
+  margin: 50px 50px;
+  /* background-color: green; */
+  padding: 20px 20px;
+  width: 50%;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.who-is-acb-img {
+  border-radius: 10px;
+  padding: 20px 20px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+
+.lorem-ipsum {
+  margin: 50px 50px;
+  /* background-color: green; */
+  padding: 20px 20px;
+  width: 50%;
+  justify-content: space-around;
+  align-content: center;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
